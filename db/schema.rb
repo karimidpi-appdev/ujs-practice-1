@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_08_142429) do
+ActiveRecord::Schema.define(version: 2023_05_08_222341) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2023_05_08_142429) do
 
   create_table "tasks", force: :cascade do |t|
     t.text "content"
-    t.string "status"
+    t.string "status", default: "not_yet_started"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
