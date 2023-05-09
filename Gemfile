@@ -5,6 +5,8 @@ ruby '3.0.3'
 
 gem "devise"
 
+gem 'faker'
+
 gem "grade_runner", github: "firstdraft/grade_runner"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
